@@ -21,14 +21,15 @@ int main()
     int SEC_IN_HOUR = SEC_IN_MIN*MIN_IN_HOUR;
     int SEC_IN_DAY = SEC_IN_HOUR*24;
 //    printf("%d %d %d %d", SEC_IN_MIN, MIN_IN_HOUR, SEC_IN_HOUR, SEC_IN_DAY);
-    int h, m, s, original_time = 0, alarm_time = 0;
-    int delta_time, delta_time_h = -1, delta_time_m = -1, delta_time_s = -1;
-    int alarm_time_h = 0, alarm_time_m = 0, alarm_time_s = 0, extra_days = 0;
+    int h=0, m=0, s=0, original_time = 0;
+    long alarm_time = 0;
+    long delta_time=0, delta_time_h = -1, delta_time_m = -1, delta_time_s = -1;
+    long alarm_time_h = 0, alarm_time_m = 0, alarm_time_s = 0, extra_days = 0;
     //Input original_time
-    scanf("%d:%d:%d", &h, &m, &s);
+    scanf("%ld:%ld:%ld", &h, &m, &s);
     original_time = h * SEC_IN_HOUR + m * SEC_IN_MIN + s;
     //#Delta time input
-    scanf("%d:%d:%d", &delta_time_h, &delta_time_m, &delta_time_s);
+    scanf("%ld:%ld:%ld", &delta_time_h, &delta_time_m, &delta_time_s);
     if (delta_time_m == -1 && delta_time_s == -1){
     // Полоучены только секунды
             delta_time_s = delta_time_h;
