@@ -1,0 +1,44 @@
+﻿// 25006.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+
+void pascals_triangle(vector <vector<int> >& a, int n)
+{
+    a.reserve(n);
+    for (int i = 0; i < n; ++i) {
+        vector <int> x;
+        x.reserve(i + 1);
+        a.push_back(x);
+        for (int j = 0; j < i + 1; ++j) {
+            a[a.size() - 1].push_back(0);
+        }
+    }
+
+    for (int i = 0; i < a.size(); ++i) {
+        for (int j = 0; j < a[i].size(); ++j) {
+            if (j == 0 || j == (a[i].size() - 1)) {
+                a[i][j] = 1;
+            }
+            else {
+                a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
+            }
+        }
+    }
+}
+
+int main()
+{
+    std::cout << "Hello World!\n";
+}
+
+// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
+// Debug program: F5 or Debug > Start Debugging menu
+
+// Tips for Getting Started: 
+//   1. Use the Solution Explorer window to add/manage files
+//   2. Use the Team Explorer window to connect to source control
+//   3. Use the Output window to see build output and other messages
+//   4. Use the Error List window to view errors
+//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
+//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

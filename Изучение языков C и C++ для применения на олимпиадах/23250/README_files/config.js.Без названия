@@ -1,0 +1,6 @@
+
+window[window["TiktokAnalyticsObject"]].instance("C51JSDJMLFUNS6NQ8A5G").setAdvancedMatchingAvailableProperties({"email":true,"phone_number":true,"auto_email":false,"auto_phone_number":false});
+window[window["TiktokAnalyticsObject"]].instance("C51JSDJMLFUNS6NQ8A5G").setPixelInfo && window[window["TiktokAnalyticsObject"]].instance("C51JSDJMLFUNS6NQ8A5G").setPixelInfo({status: 0, name: "Фоксфорд (и все субдомены)", advertiserID: "7006303191323148289", setupMode: 1, partner: "", is_onsite: false });
+window[window["TiktokAnalyticsObject"]].setPCMDomain && window[window["TiktokAnalyticsObject"]].setPCMDomain("foxford.ru");
+window[window["TiktokAnalyticsObject"]].setPCMConfig && window[window["TiktokAnalyticsObject"]].setPCMConfig([]);
+window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie && window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie(true);
